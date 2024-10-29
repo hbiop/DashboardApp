@@ -1,10 +1,19 @@
 import "./SidebarComponent.css"
+import {useNavigate } from 'react-router-dom';
+
 const Sidebar = () => {
+  const navigate = useNavigate();
+    const handleSubmit = (e:React.FormEvent) => {
+        e.preventDefault();
+        navigate('/dashboards', { replace: true })
+    }
   return (
     <aside id="left">
 				<ul className="sidebar_list">
           <li>
-            <button className="button">
+            <button className="button" onClick={
+              handleSubmit
+            }>
               Дэшборды
             </button>
           </li>

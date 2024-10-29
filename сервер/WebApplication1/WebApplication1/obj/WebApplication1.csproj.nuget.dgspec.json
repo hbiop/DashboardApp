@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\need\\projects\\c#\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "D:\\need\\практика\\сервер\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\need\\projects\\c#\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "D:\\need\\практика\\сервер\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\need\\projects\\c#\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "D:\\need\\практика\\сервер\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\need\\projects\\c#\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "D:\\need\\практика\\сервер\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\irina\\.nuget\\packages\\",
-        "outputPath": "D:\\need\\projects\\c#\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "D:\\need\\практика\\сервер\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\irina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

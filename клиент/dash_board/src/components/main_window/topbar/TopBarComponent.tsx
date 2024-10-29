@@ -1,10 +1,20 @@
+
+import { Link, useNavigate } from 'react-router-dom';
+
 const TopBar = () => {
+    const navigate = useNavigate();
+    const handleSubmit = (e:React.FormEvent) => {
+        e.preventDefault();
+        navigate('/add_component', { replace: true })
+    }
     return (
         <header id="top">
-            <button>Добавить</button>
+            <button className="add"onClick={
+                handleSubmit
+            }>Добавить</button>
             DashBoard
         </header>
     );
-  };
+};
   
-  export default TopBar;
+export default TopBar;

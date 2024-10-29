@@ -29,23 +29,22 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.MapGet("/m", (string login, string parol) =>
+app.MapGet("/authorization", (string login, string parol) =>
 {
-    if(login == parol)
+    var user = Helper.GetContext().Polzovatels.Where(i => i.Login == login && i.Parol == parol).FirstOrDefault();
+    if(user != null)
     {
-        return new Service
-        {
-            status = true
-        };
-            
+        return Results.Ok(new {id = user.Id});
     }
     else
     {
-        return new Service
-        {
-            status = false
-        };
+        return Results.Unauthorized();
     }
+});
+
+app.MapGet("/get_dashboard", () =>
+{
+    
 });
 app.UseHttpsRedirection();
 
