@@ -25,6 +25,8 @@ public partial class DashboardDataBaseContext : DbContext
 
     public virtual DbSet<Polzovatel> Polzovatels { get; set; }
 
+    public virtual DbSet<ProvaiderDanyh> ProvaiderDanyhs { get; set; }
+
     public virtual DbSet<Razreshenium> Razreshenia { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
@@ -120,10 +122,16 @@ public partial class DashboardDataBaseContext : DbContext
                 .HasMaxLength(100)
                 .IsFixedLength()
                 .HasColumnName("connection_string");
+            entity.Property(e => e.IdProvider).HasColumnName("id_provider");
             entity.Property(e => e.Nazvanie)
                 .HasMaxLength(100)
                 .IsFixedLength()
                 .HasColumnName("nazvanie");
+
+            entity.HasOne(d => d.IdProviderNavigation).WithMany(p => p.IstochnikDanyhs)
+                .HasForeignKey(d => d.IdProvider)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("fk_provider");
         });
 
         modelBuilder.Entity<Polzovatel>(entity =>
@@ -166,6 +174,21 @@ public partial class DashboardDataBaseContext : DbContext
                 .HasForeignKey(d => d.IdRole)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("role_fk");
+        });
+
+        modelBuilder.Entity<ProvaiderDanyh>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("provaider_danyh_pkey");
+
+            entity.ToTable("provaider_danyh");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
+            entity.Property(e => e.Nazvanie)
+                .HasMaxLength(100)
+                .IsFixedLength()
+                .HasColumnName("nazvanie");
         });
 
         modelBuilder.Entity<Razreshenium>(entity =>
@@ -257,6 +280,7 @@ public partial class DashboardDataBaseContext : DbContext
                 .HasMaxLength(100)
                 .IsFixedLength()
                 .HasColumnName("nazvanie");
+            entity.Property(e => e.VremiaObnovlenia).HasColumnName("vremia_obnovlenia");
 
             entity.HasOne(d => d.IdIstochnikDanihNavigation).WithMany(p => p.Widgets)
                 .HasForeignKey(d => d.IdIstochnikDanih)

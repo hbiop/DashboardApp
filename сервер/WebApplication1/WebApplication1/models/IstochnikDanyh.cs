@@ -11,5 +11,9 @@ public partial class IstochnikDanyh
 
     public string ConnectionString { get; set; } = null!;
 
+    public int IdProvider { get; set; }
+
+    public virtual ProvaiderDanyh IdProviderNavigation { get; set; } = null!;
+
     public virtual ICollection<Widget> Widgets { get; set; } = new List<Widget>();
 }

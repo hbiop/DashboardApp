@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using WebApplication1;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,9 +43,39 @@ app.MapGet("/authorization", (string login, string parol) =>
     }
 });
 
-app.MapGet("/get_dashboard", () =>
+app.MapGet("/get_dashboards", (int id) =>
 {
-    
+    var db = Helper.GetContext();
+    var dashboards = from user_dashboard in db.DashboardPolzovatels
+            join user in db.Polzovatels on user_dashboard.IdUser equals user.Id
+            join dashboard in db.Dashboards on user_dashboard.IdDashboard equals dashboard.Id
+            where user.Id == id
+            select new
+            {
+                Id = dashboard.Id,
+                Nazvanie = dashboard.Nazvanie,
+                DataSozdania = dashboard.DataSozdania
+            };
+    return dashboards.ToList();
+});
+
+app.MapGet("/get_widgets", (int id) =>
+{
+    var db = Helper.GetContext();
+    var widgetsList = from dashboard_widget in db.DashboardWidgets
+                     join dashboard in db.Dashboards on dashboard_widget.IdWidget equals dashboard.Id
+                     join widgets in db.Widgets on dashboard_widget.IdDashboard equals widgets.Id
+                     where dashboard.Id == id
+                     select new
+                     {
+                         Id = widgets.Id,
+                         Nazvanie = widgets.Nazvanie,
+                         DataSozdania = widgets.DataSozdania,
+                         VremiaObnovlenia = widgets.VremiaObnovlenia,
+                         IdWidgetType = widgets.IdWidgetType,
+                         IdIstochnikDanyh = widgets.IdIstochnikDanih
+                     };
+    return widgetsList.ToList();
 });
 app.UseHttpsRedirection();
 

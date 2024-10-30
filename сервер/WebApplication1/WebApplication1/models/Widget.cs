@@ -15,6 +15,8 @@ public partial class Widget
 
     public int IdWidgetType { get; set; }
 
+    public int VremiaObnovlenia { get; set; }
+
     public virtual ICollection<DashboardWidget> DashboardWidgets { get; set; } = new List<DashboardWidget>();
 
     public virtual IstochnikDanyh IdIstochnikDanihNavigation { get; set; } = null!;

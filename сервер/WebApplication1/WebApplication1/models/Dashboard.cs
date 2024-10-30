@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using WebApplication1.models;
 
-namespace WebApplication1;
+namespace WebApplication1.models;
 
 public partial class Dashboard
 {
