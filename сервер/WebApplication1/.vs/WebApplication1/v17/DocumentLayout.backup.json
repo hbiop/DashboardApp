@@ -46,12 +46,11 @@
               "Title": "DashboardWidget.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\DashboardWidget.cs",
               "RelativeDocumentMoniker": "WebApplication1\\models\\DashboardWidget.cs",
-              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\DashboardWidget.cs*",
-              "RelativeToolTip": "WebApplication1\\models\\DashboardWidget.cs*",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\DashboardWidget.cs",
+              "RelativeToolTip": "WebApplication1\\models\\DashboardWidget.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T12:48:10.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T12:48:10.341Z"
             },
             {
               "$type": "Document",
@@ -59,9 +58,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Program.cs*",
-              "RelativeToolTip": "WebApplication1\\Program.cs*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAqwE0AAAAWAAAAAAAAAA==",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAE0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T12:13:06.454Z",
               "EditorCaption": ""
@@ -84,12 +83,11 @@
               "Title": "Helper.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Helper.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Helper.cs",
-              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Helper.cs*",
-              "RelativeToolTip": "WebApplication1\\Helper.cs*",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Helper.cs",
+              "RelativeToolTip": "WebApplication1\\Helper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T13:13:59.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T13:13:59.732Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "WebApplication1\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T05:21:07.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T05:21:07.465Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "WebApplication1\\DashboardDataBaseContext.cs",
               "ViewState": "AgIAAKIAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T12:57:36.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T12:57:36.825Z"
             }
           ]
         }
