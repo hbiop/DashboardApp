@@ -1,35 +1,29 @@
 import { useEffect, useState } from 'react';
 import { WidgetEntity } from '../../../../../../domain/entities/WidgetEntity';
+import { WidgetsController } from '../../../../../../domain/controllers/WidgetServiceController';
+import { ErrorService } from '../../../../../../domain/ErrorService';
+import { ServicesEntity } from '../../../../../../domain/entities/ServicesEntity';
 
-const servicesToCheck = [
-    { id: 1, name: 'Service 1', url: 'https://api.chucknorris.io/jokes/random' },
-    { id: 2, name: 'Service 2', url: 'https://api.service2.com/status' },
-    { id: 3, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 4, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 5, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 6, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 7, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 8, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 9, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 10, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 11, name: 'Service 3', url: 'https://api.service3.com/status' },
-    { id: 12, name: 'Service 3', url: 'https://api.chucknorris.io/jokes/random' },
-    { id: 13, name: 'Service 3', url: 'https://api.chucknorris.io/jokes/random' },
-    { id: 14, name: 'Service 3', url: 'https://api.chucknorris.io/jokes/random' },
-    { id: 15, name: 'Service 3', url: 'https://api.chucknorris.io/jokes/random' },
-    { id: 16, name: 'Service 3', url: 'https://api.chucknorris.io/jokes/random' },
-];
 
 type Service = {
     id: number;
     name: string;
     url: string;
-    status?: string; // Статус теперь опциональный
-  };
+    status?: string;
+};
   
 export default function ServiceStatusDashboard({ widget }: { widget: WidgetEntity }) {
     const [services, setServices] = useState<Service[]>([]);
-  
+    const [sercicesUrls, setServicesUrls] = useState<ServicesEntity[]>([]);
+    const widgetsController = new WidgetsController();
+    const errorService = new ErrorService();
+    const getWidgetUrls = async () => {
+      try {
+        setServicesUrls((await widgetsController.getUrls(widget.id)).servicesToCheck);
+      } catch (error) {
+        console.log(errorService.handle(error));
+      }
+    };
     const checkServiceStatus = async (url: string): Promise<string> => {
       try {
         const response = await fetch(url);
@@ -39,26 +33,27 @@ export default function ServiceStatusDashboard({ widget }: { widget: WidgetEntit
       }
     };
   
-    const fetchServicesStatus = async (servicesToCheck: Service[]) => {
-      const updatedServices = await Promise.all(
-        servicesToCheck.map(async (service) => {
+    const fetchServicesStatus = async () => {
+      const updatedServices = await Promise.all(  
+        sercicesUrls.map(async (service) => {
           const status = await checkServiceStatus(service.url);
-          return { ...service, status };
+          return { ...service, status }; 
         })
       );
       setServices(updatedServices);
     };
-  
+    
     useEffect(() => {
+      getWidgetUrls();
       if (!services.length) {
-        fetchServicesStatus([{ id: 0, name: 'Placeholder', url: '', status: '' }]);
+        fetchServicesStatus();
+        console.log("fss ok")
       }
       const interval = setInterval(() => {
-        fetchServicesStatus(services);
-      }, 30000);
+        fetchServicesStatus();
+      }, 6000000);
       return () => clearInterval(interval);
     }, [services]);
-  
     return (
       <div key={widget.id} className='product-card'>
         <table>

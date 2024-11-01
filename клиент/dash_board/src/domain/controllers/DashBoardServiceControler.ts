@@ -10,6 +10,9 @@ export class DashboardController {
     }
 
     public async getDashboards(id:number): Promise<DashBoardData[]> {
-        return this.dashboard.getDashboards(id)
+        return this.dashboard.getDashboards(id);
+    }
+    public async postDashboard(id:number, title: string): Promise<void> {
+        this.dashboard.postDashboards(id, title);
     }
 }

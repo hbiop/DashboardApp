@@ -59,6 +59,7 @@ app.MapGet("/get_dashboards", (int id) =>
     return dashboards.ToList();
 });
 
+
 app.MapGet("/get_widgets", (int id) =>
 {
     var db = Helper.GetContext();
@@ -77,6 +78,9 @@ app.MapGet("/get_widgets", (int id) =>
                      };
     return widgetsList.ToList();
 });
+
+
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

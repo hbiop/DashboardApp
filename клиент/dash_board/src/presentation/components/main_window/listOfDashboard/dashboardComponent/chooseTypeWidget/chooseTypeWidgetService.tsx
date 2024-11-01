@@ -5,8 +5,7 @@ export class WidgetService{
     getWidgetType(widget: WidgetEntity){
         switch(widget.idWidgetType){
             case 1:{
-                ServiceStatusDashboard(widget);
-                break;
+                return(<ServiceStatusDashboard key={widget.id} widget={widget} />)
             }
             default:{
                 break;

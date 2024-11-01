@@ -1,7 +1,29 @@
 {
-	"dbname":"test",
-	"user":"dashboardreader",
-	"password":"password",
-	"host":"localhost",
-	"port":"5432"
+	"servicesToCheck":[
+		{
+			"id":1,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		},
+		{
+			"id":2,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		},
+		{
+			"id":3,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		},
+		{
+			"id":4,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		},
+		{
+			"id":5,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		}
+	]
 }

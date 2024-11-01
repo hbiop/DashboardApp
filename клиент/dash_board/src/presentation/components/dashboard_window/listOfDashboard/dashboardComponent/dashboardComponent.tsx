@@ -1,4 +1,4 @@
-import { json, NavigateFunction } from "react-router-dom";
+import {NavigateFunction } from "react-router-dom";
 
 const ServiceStatusDashboard = (key:number,title: string, navigation:NavigateFunction) => {
     async function handleSubmit(e:React.FormEvent, id: number){

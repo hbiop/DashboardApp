@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\controllers\\widgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\widgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\models\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\models\\dashboardpolzovatel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\dashboardpolzovatel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\models\\dashboardwidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\dashboardwidget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\DashboardDataBaseContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\DashboardDataBaseContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\DashboardDataBaseContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\DashboardDataBaseContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC0B8873-77B0-4707-9CE7-18DCD98DEAD0}|WebApplication1\\WebApplication1.csproj|d:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\webapplication1\\webapplication1\\webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -38,11 +50,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WidgetController.cs",
+              "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Controllers\\WidgetController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\WidgetController.cs",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Controllers\\WidgetController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\WidgetController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T21:43:00.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\Dashboard.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\models\\Dashboard.cs",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\Dashboard.cs",
+              "RelativeToolTip": "WebApplication1\\models\\Dashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T20:40:03.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T20:29:28.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DashboardWidget.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\DashboardWidget.cs",
               "RelativeDocumentMoniker": "WebApplication1\\models\\DashboardWidget.cs",
@@ -50,24 +101,25 @@
               "RelativeToolTip": "WebApplication1\\models\\DashboardWidget.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T12:48:10.341Z"
+              "WhenOpened": "2024-10-30T12:48:10.341Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T12:13:06.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "WebApplication1.http",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\WebApplication1.http",
               "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.http",
@@ -75,11 +127,12 @@
               "RelativeToolTip": "WebApplication1\\WebApplication1.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-10-29T13:17:02.941Z"
+              "WhenOpened": "2024-10-29T13:17:02.941Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Helper.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Helper.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Helper.cs",
@@ -87,11 +140,12 @@
               "RelativeToolTip": "WebApplication1\\Helper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T13:13:59.732Z"
+              "WhenOpened": "2024-10-29T13:13:59.732Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WebApplication1\\WeatherForecast.cs",
@@ -99,29 +153,30 @@
               "RelativeToolTip": "WebApplication1\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T13:16:29.271Z"
+              "WhenOpened": "2024-10-29T13:16:29.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DashboardPolzovatel.cs",
+              "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\DashboardPolzovatel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\models\\DashboardPolzovatel.cs",
+              "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\models\\DashboardPolzovatel.cs",
+              "RelativeToolTip": "WebApplication1\\models\\DashboardPolzovatel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T05:21:07.465Z"
+              "WhenOpened": "2024-11-01T20:46:33.663Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "DashboardDataBaseContext.cs",
               "DocumentMoniker": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\DashboardDataBaseContext.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DashboardDataBaseContext.cs",
               "ToolTip": "D:\\need\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0441\u0435\u0440\u0432\u0435\u0440\\WebApplication1\\WebApplication1\\DashboardDataBaseContext.cs",
               "RelativeToolTip": "WebApplication1\\DashboardDataBaseContext.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T12:57:36.825Z"
             }
