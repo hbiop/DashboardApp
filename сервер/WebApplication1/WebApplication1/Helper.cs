@@ -5,7 +5,7 @@ namespace WebApplication1
     public class Helper
     {
         private static DashboardDataBaseContext context;
-        public static DashboardDataBaseContext GetContext()
+        public DashboardDataBaseContext GetContext()
         {
             if(context == null)
             {

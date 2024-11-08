@@ -4,7 +4,7 @@ import { FetchUrlsEntities } from "../../domain/entities/ServicesTOCheck";
 
 export class WidgetService implements IWidgetController{
     async getWidgetUrls(id: number): Promise<FetchUrlsEntities> {
-        const response = await fetch("https://localhost:7250/get_istocnik_danyh?id=" + id);
+        const response = await fetch("https://localhost:7250/widgets/GetIstochnickDanyh?id="+id);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }      
@@ -12,7 +12,7 @@ export class WidgetService implements IWidgetController{
         return data;
     }
     async getWidgets(id: number): Promise<WidgetEntity[]> {
-        const response = await fetch("https://localhost:7250/get_widgets?id=" + id);
+        const response = await fetch("https://localhost:7250/widgets/GetWidget?id=" + id);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }      

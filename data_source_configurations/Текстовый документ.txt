@@ -1,0 +1,32 @@
+https://github.com/dex252/ion-example
+
+https://github.com/dex252/ion-example/tree/master/AuthServe/Modules
+
+
+
+1. username-pass -> sha512
+
+/// <summary>
+/// Прочесть файл из сборки
+/// </summary>
+/// <param name="fileName">Имя внедренного ресурса</param>
+/// <returns></returns>
+/// <exception cref="Exception"></exception>
+private string GetFileByName(string fileName)
+{
+var assembly = Assembly.GetExecutingAssembly();
+
+var assemblyName = assembly.GetManifestResourceNames()
+.FirstOrDefault(n => n.EndsWith(fileName));
+
+if (assemblyName == null)
+throw new Exception($"Не найден файл {fileName}");
+
+using (var stream = assembly.GetManifestResourceStream(assemblyName))
+using (var reader = new StreamReader(stream))
+{
+string result = reader.ReadToEnd();
+
+return result;
+}
+}

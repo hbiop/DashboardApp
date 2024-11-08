@@ -28,8 +28,46 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.DashboardController",
+    "Method": "Authorization",
+    "RelativePath": "dashboard/Authorization",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "parol",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "auth"
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DashboardController",
+    "Method": "DeleteDashBoard",
+    "RelativePath": "dashboard/DeleteDashBoard",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DashboardController",
     "Method": "GetDashBoard",
-    "RelativePath": "dashboard/Dashboard",
+    "RelativePath": "dashboard/GetDashBoard",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -56,7 +94,7 @@
   {
     "ContainingType": "WebApplication1.Controllers.DashboardController",
     "Method": "PostDashBoard",
-    "RelativePath": "dashboard/Dashboard",
+    "RelativePath": "dashboard/PostDashBoard",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -91,30 +129,6 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[\u003C\u003Ef__AnonymousType5\u00603[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
-    "RelativePath": "get_istocnik_danyh",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
         "Type": "System.Void",
         "MediaTypes": [],
         "StatusCode": 200
@@ -137,13 +151,29 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[\u003C\u003Ef__AnonymousType6\u00606[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[\u003C\u003Ef__AnonymousType5\u00606[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WidgetController",
+    "Method": "GetIstochnickDanyh",
+    "RelativePath": "widgets/GetIstochnickDanyh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebApplication1.Controllers.WidgetController",
@@ -174,23 +204,6 @@
   },
   {
     "ContainingType": "WebApplication1.Controllers.WidgetController",
-    "Method": "PostIstochnickDanyh",
-    "RelativePath": "widgets/PostIstochnickDanyh",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "jsonString",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [],
-    "EndpointName": "post_widgets_q"
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.WidgetController",
     "Method": "PostWidget",
     "RelativePath": "widgets/PostWidget",
     "HttpMethod": "POST",
@@ -203,7 +216,22 @@
         "IsRequired": false
       },
       {
-        "Name": "CreatorId",
+        "Name": "IdWidgetType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "VremiaObnovlenia",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "json",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idDashboard",
         "Type": "System.Int32",
         "IsRequired": false
       }

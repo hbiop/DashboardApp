@@ -51,7 +51,7 @@ export default function ServiceStatusDashboard({ widget }: { widget: WidgetEntit
       }
       const interval = setInterval(() => {
         fetchServicesStatus();
-      }, 6000000);
+      }, widget.vremiaObnovlenia);
       return () => clearInterval(interval);
     }, [services]);
     return (

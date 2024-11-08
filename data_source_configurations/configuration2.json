@@ -1,1 +1,19 @@
-{   "first_name": "Иван",   "last_name": "Иванов",   "age": 30,   "address": {     "street": "Ленина",     "house_number": 10,     "city": "Москва"   },   "hobbies": [     "чтение",     "программирование",     "спорт"   ] }
+{
+	"servicesToCheck":[
+		{
+			"id":1,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		},
+		{
+			"id":2,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		},
+		{
+			"id":3,
+			"name":"Service 1",
+			"url":"https://localhost:7250/get_istocnik_danyh?id=1"
+		}
+	]
+}

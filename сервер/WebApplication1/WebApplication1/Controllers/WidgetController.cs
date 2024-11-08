@@ -8,41 +8,64 @@ namespace WebApplication1.Controllers
     [Route("widgets/[action]")]
     public class WidgetController
     {
-        DashboardDataBaseContext context = Helper.GetContext();
+        
         [HttpGet(Name = "get_widgets")]
-        public List<Widget> GetWidget(int id)
+        async public Task<List<Widget>> GetWidget(int id)
         {
-            var widgetsList = from dashboard_widget in context.DashboardWidgets
-                              join dashboard in context.Dashboards on dashboard_widget.IdWidget equals dashboard.Id
-                              join widgets in context.Widgets on dashboard_widget.IdDashboard equals widgets.Id
-                              where dashboard.Id == id
-                              select new Widget
-                              {
-                                  Id = widgets.Id,
-                                  Nazvanie = widgets.Nazvanie,
-                                  DataSozdania = widgets.DataSozdania,
-                                  VremiaObnovlenia = widgets.VremiaObnovlenia,
-                                  IdWidgetType = widgets.IdWidgetType,
-                                  IdIstochnikDanih = widgets.IdIstochnikDanih
-                              };
-            return widgetsList.ToList();
+            var helper = new Helper();
+            var db = helper.GetContext();
+            var widgetsList = await (from dashboard_widget in db.DashboardWidgets
+                                     join dashboard in db.Dashboards on dashboard_widget.IdDashboard equals dashboard.Id
+                                     join widgets in db.Widgets on dashboard_widget.IdWidget equals widgets.Id
+                                     where dashboard.Id == id
+                                     select new Widget
+                                     {
+                                         Id = widgets.Id,
+                                         Nazvanie = widgets.Nazvanie,
+                                         DataSozdania = widgets.DataSozdania,
+                                         VremiaObnovlenia = widgets.VremiaObnovlenia,
+                                         IdWidgetType = widgets.IdWidgetType,
+                                         IdIstochnikDanih = widgets.IdIstochnikDanih
+                                     }).ToListAsync();
+
+            return widgetsList;
         }
         [HttpGet]
-        public IResult GetIstochnickDanyh(int id)
-        { 
-            int idIstochnikDanyh = context.Widgets.Where(i => i.Id == id).FirstOrDefault().IdIstochnikDanih;
-            string filePath = context.IstochnikDanyhs.Where(i => i.Id == idIstochnikDanyh).FirstOrDefault().ConnectionString;
-            if (!System.IO.File.Exists(filePath))
-            {
-                return Results.NotFound();
-            }
-            string jsonContent = System.IO.File.ReadAllText(filePath);
-            return Results.Content(jsonContent, "application/json");
+        public async Task<IResult> GetIstochnickDanyh(int id)
+        {
+            var helper = new Helper();
+            var context = helper.GetContext();
+                var widget = await context.Widgets.FirstOrDefaultAsync(w => w.Id == id);
+
+                if (widget == null)
+                {
+                    return Results.NotFound();
+                }
+                var istochnikDanyh = await context.IstochnikDanyhs
+                    .FirstOrDefaultAsync(i => i.Id == widget.IdIstochnikDanih);
+
+                if (istochnikDanyh == null || string.IsNullOrWhiteSpace(istochnikDanyh.ConnectionString))
+                {
+                    return Results.BadRequest("Источник данных не найден или отсутствует путь к файлу.");
+                }
+
+                string filePath = istochnikDanyh.ConnectionString;
+
+                if (!System.IO.File.Exists(filePath))
+                {
+                    return Results.NotFound();
+                }
+
+                string jsonContent = System.IO.File.ReadAllText(filePath);
+                return Results.Content(jsonContent, "application/json");
+            
         }
 
         [HttpPost(Name = "post_widgets")]
         public IResult PostWidget(string Nazvanie, int IdWidgetType, int VremiaObnovlenia, string json, int idDashboard)
         {
+            var helper = new Helper();
+            DashboardDataBaseContext context = helper.GetContext();
             if (Nazvanie.Length > 100)
             {
                 return Results.Problem("Строка должна быть меньше 100 символов");
@@ -75,13 +98,6 @@ namespace WebApplication1.Controllers
             }
 
         }
-        [HttpPost(Name = "post_widgets_q")]
-        public IResult PostIstochnickDanyh(string jsonString)
-        {
-            string filePath = @"D:\need\практика\data_source_configurations\configuration2.json";
-            File.WriteAllText(filePath, jsonString);
-            Console.WriteLine("JSON файл успешно сохранён!");
-            return Results.StatusCode(200);
-        }
+
     }
 }

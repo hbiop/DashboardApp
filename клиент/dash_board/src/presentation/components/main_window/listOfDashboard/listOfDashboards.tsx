@@ -4,7 +4,6 @@ import { FC, useEffect, useState } from "react";
 import { WidgetEntity } from "../../../../domain/entities/WidgetEntity";
 import { ErrorService } from "../../../../domain/ErrorService";
 import { WidgetsController } from "../../../../domain/controllers/WidgetServiceController";
-import ServiceStatusDashboard from "./dashboardComponent/stateServiceComponent/dashboardComponent";
 import { WidgetService } from "./dashboardComponent/chooseTypeWidget/chooseTypeWidgetService";
 const ListOfDashboards: FC = () => {
     const location = useLocation(); // Получение пути из URL

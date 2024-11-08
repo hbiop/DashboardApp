@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebApplication1;
+using WebApplication1.models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +33,8 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/authorization", (string login, string parol) =>
 {
-    var user = Helper.GetContext().Polzovatels.Where(i => i.Login == login && i.Parol == parol).FirstOrDefault();
+    var helper = new Helper();
+    var user = helper.GetContext().Polzovatels.Where(i => i.Login == login && i.Parol == parol).FirstOrDefault();
     if(user != null)
     {
         return Results.Ok(new {id = user.Id});
@@ -45,7 +47,7 @@ app.MapGet("/authorization", (string login, string parol) =>
 
 app.MapGet("/get_dashboards", (int id) =>
 {
-    var db = Helper.GetContext();
+    /*var db = new Helper.GetContext();
     var dashboards = from user_dashboard in db.DashboardPolzovatels
             join user in db.Polzovatels on user_dashboard.IdUser equals user.Id
             join dashboard in db.Dashboards on user_dashboard.IdDashboard equals dashboard.Id
@@ -56,16 +58,17 @@ app.MapGet("/get_dashboards", (int id) =>
                 Nazvanie = dashboard.Nazvanie,
                 DataSozdania = dashboard.DataSozdania
             };
-    return dashboards.ToList();
+    return dashboards.ToList();*/
 });
 
 
 app.MapGet("/get_widgets", (int id) =>
 {
-    var db = Helper.GetContext();
+    var helper = new Helper();
+    var db = helper.GetContext();
     var widgetsList = from dashboard_widget in db.DashboardWidgets
-                     join dashboard in db.Dashboards on dashboard_widget.IdWidget equals dashboard.Id
-                     join widgets in db.Widgets on dashboard_widget.IdDashboard equals widgets.Id
+                     join dashboard in db.Dashboards on dashboard_widget.IdDashboard equals dashboard.Id
+                     join widgets in db.Widgets on dashboard_widget.IdWidget equals widgets.Id
                      where dashboard.Id == id
                      select new
                      {
